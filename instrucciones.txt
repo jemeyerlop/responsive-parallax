@@ -1,0 +1,56 @@
+Responsive Parallax
+Autor: Juan Enrique Meyer, 2016
+Licencia: MIT
+https://github.com/jemeyerlop/responsive-parallax
+
+Propósito:
+
+El propósito de este plugin es que distintas imágenes con efecto parallax, ubicadas a diversas alturas de una página responsive, puedan tener cada una su propio movimiento (dirección, velocidad, cambio de dirección y cambio de velocidad), independientemente de las otras.
+
+Instrucciones
+
+En el código HTML insertar una imagen dentro de un div con clase 'parallax' (solo una imagen por cada div):
+
+<div class="parallax">
+	<img src="img/1.jpg">
+</div>
+
+A cada imagen agregarle al menos los siguientes atributos 'data' para el funcionamiento del efecto parallax:
+
+data-y-position
+- Posición inicial de la imagen en el eje 'y' con un valor numérico
+
+data-x-position
+- Posición inicial de la imagen en el eje 'x' con un valor numérico
+
+data-y-speed
+- Velocidad con la que la imagen se desplazará en el eje 'y' con un valor numérico
+
+data-x-speed
+- Velocidad con la que la imagen se desplazará en el eje 'x' con un valor numérico
+
+data-y-direction
+- Dirección del desplazamiento de la imagen en el eje 'y' con los valores 'up' o 'down'
+
+data-x-direction
+- Dirección del desplazamiento de la imagen en el eje 'x' con los valores 'right' o 'left'
+
+Opcionalmente, se pueden agregar los siguientes atributos 'data' para modificar los movimientos iniciales:
+
+data-y-reverse
+- Invierte la dirección del desplazamiento en el eje 'y'. Requiere un valor numérico, donde '1' es equivalente a la altura del contenedor de la foto (el div con clase 'parallax'). El cambio de dirección se produce cuando la distancia entre la parte superior del div contenedor y el borde superior de la página sea igual al valor señalado en este atributo 'data'.
+
+data-x-reverse
+- Invierte la dirección del desplazamiento en el eje 'x'. Requiere un valor numérico, donde '1' es equivalente a la altura del contenedor de la foto (el div con clase 'parallax'). El cambio de dirección se produce cuando la distancia entre la parte superior del div contenedor y el borde superior de la página sea igual al valor señalado en este atributo 'data'.
+
+data-y-speed-change-position
+- Posición en el eje 'y' a partir de la cual se produce el cambio de velocidad en el eje 'y', donde '1' es equivalente a la altura del contenedor de la foto (el div con clase 'parallax'). El cambio de velocidad se produce cuando la distancia entre la parte superior del div contenedor y el borde superior de la página sea igual al valor señalado en este atributo 'data'. Debe usarse en conjunto con el atributo 'data-y-speed-change-speed'.
+
+data-x-speed-change-position
+- Posición en el eje 'y' a partir de la cual se produce el cambio de velocidad en el eje 'x', donde '1' es equivalente a la altura del contenedor de la foto (el div con clase 'parallax'). El cambio de velocidad se produce cuando la distancia entre la parte superior del div contenedor y el borde superior de la página sea igual al valor señalado en este atributo 'data'. Debe usarse en conjunto con el atributo 'data-x-speed-change-speed'.
+
+data-y-speed-change-speed
+- Velocidad que tendrá el desplazamiento en el eje 'y' a partir del punto señalado en el atributo 'data-y-speed-change-position'. Esta velocidad reemplaza a la velocidad inicial de 'data-y-speed'. Debe usarse en conjunto con 'data-y-speed-change-position'.
+
+data-x-speed-change-speed
+- Velocidad que tendrá el desplazamiento en el eje 'x' a partir del punto señalado en el atributo 'data-x-speed-change-position'. Esta velocidad reemplaza a la velocidad inicial de 'data-x-speed'. Debe usarse en conjunto con 'data-x-speed-change-position'.

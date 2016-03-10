@@ -1,0 +1,26 @@
+	body{
+		padding: 0;
+		margin: 0;
+		background-color: #111;
+		color: #ddd;
+		text-align: center;
+	}
+	header{
+		width: 80%;
+		margin: 0 auto;
+	}
+/*parallax*/
+	.parallax{
+		position:relative;
+		height: 0;
+		width:50%;
+		max-width:100%;
+		margin:100px auto;
+		padding: 30% 0 0 0;
+		overflow: hidden;
+	}
+	.parallax img{		
+		position:absolute;
+		width: 200%;
+		height: auto;		
+	}

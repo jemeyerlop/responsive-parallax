@@ -1,0 +1,57 @@
+Responsive Parallax
+Author: Juan Enrique Meyer, 2016
+License: MIT
+https://github.com/jemeyerlop/responsive-parallax
+
+Purpose:
+
+The purpose of this plugin is that different images with parallax effect, located at different heights on a responsive page, can have each their own movement (direction, speed ,change of direction and change of speed), independently.
+
+Instructions
+
+
+Insert an image into a div with class 'parallax' in the HTML code (only one image for each div):
+
+<div class="parallax">
+	<img src="img/1.jpg">
+</div>
+
+Add to each image at least the following 'data' attributes for the operation of the parallax effect:
+
+data-y-position
+- Starting position of the image on the 'y' axis with a numerical value
+
+data-x-position
+- Starting position of the image on the 'x' axis with a numerical value
+
+data-y-speed
+- Speed with which the picture moves in the 'y' axis with a numerical value
+
+data-x-speed
+- Speed with which the picture moves in the 'x' axis with a numerical value
+
+data-y-direction
+- Direction of movement of the image on the 'y' axis with the values 'up ' or 'down '
+
+data-x-direction
+- Direction of movement of the image on the 'x' axis with the values 'right' or 'left'
+
+Optionally, you can add the following 'data' attributes to modify the initial movements:
+
+data-y-reverse
+- Reverses the direction of displacement in the 'y' axis. It requires a numeric value, where '1' is equivalent to the height of the container of the image (the div with class 'parallax'). The change of direction occurs when the distance between the top of the container div and the top edge of the page is equal to the value specified in this 'data' attribute.
+
+data-x-reverse
+- Reverses the direction of displacement in the 'x' axis. It requires a numeric value, where '1' is equivalent to the height of the container of the image (the div with class 'parallax'). The change of direction occurs when the distance between the top of the container div and the top edge of the page is equal to the value specified in this 'data' attribute.
+
+data-y-speed-change-position
+- Position in the 'y' axis from which the speed change occurs in the 'y' axis, where '1' is equivalent to the height of the container of the image (the div with class 'parallax'). The speed change occurs when the distance between the top of the container div and the top edge of the page is equal to the value specified in this 'data' attribute. It should be used in conjunction with the 'data-y-speed-change-speed'.
+
+data-x-speed-change-position
+- Position in the 'y' axis from which the speed change occurs in the 'x' axis, where '1' is equivalent to the height of the container of the image (the div with class 'parallax'). The speed change occurs when the distance between the top of the container div and the top edge of the page is equal to the value specified in this 'data' attribute. It should be used in conjunction with the 'data-x-speed-change-speed'.
+
+data-y-speed-change-speed
+- Speed of the displacement in the 'y' axis from the point mentioned in the 'data-y-speed-change-position' attribute. This speed replaces the initial speed of 'data-y-speed'. It should be used in conjunction with 'data-y-speed-change-position'.
+
+data-x-speed-change-speed
+- Speed of the displacement in the 'x' axis from the point mentioned in the 'data-x-speed-change-position' attribute. This speed replaces the initial speed of 'data-x-speed'. It should be used in conjunction with 'data-x-speed-change-position'.
